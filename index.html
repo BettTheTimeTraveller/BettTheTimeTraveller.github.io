@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="htitle">Currency Converter</h1>
+    </header>
+
+
+    <main>
+        <div id="box" class="col-sm-offset-2 col-sm-8">
+            <div id="from" class="col-md-6">
+                <div class="heading col-sm-12">From</div>
+                <select id="fromCurr" class="col-xs-12">
+                    
+                </select>
+                <input type="text" id="queryCurrency" placeholder="Enter Amount" class="col-xs-12">
+                <span class="col-xm-12" id="error"></span>
+            </div>
+            <div id="to" class="col-md-6">
+                <div class="heading col-sm-12">To</div>
+                <select id="toCurr" class="col-xs-12">
+                    
+                </select>
+                <input type="text" id="resCurrency" placeholder="0.00" class="col-xs-12" disabled>
+            </div>
+            <a id="convert" class="col-xm-4 btn btn-warning">Convert</a>
+        </div>
+    </main>
+
+    <script src="dist/main.js"></script>
+
+</body>
+
+</html>
